@@ -4,15 +4,19 @@ html
   head
     title #{title}
     link(rel='stylesheet', href='/css/styles.css')
+    link(rel='stylesheet', href='https://fonts.googleapis.com/css2?family=Sacramento&display=swap')
   body
     nav
       ul
-        li
+        li 
+          a(href='https://www.flaticon.es/iconos-gratis/cosmetico')
           a(href='/') Inicio
         li
           a(href='/catalogo') Catálogo de Productos
         li
           a(href='/carrito') Carrito de Compra (#{carrito.length})
+        li 
+          a(href='/iniciar-sesion') Iniciar sesión
 
     .container
       block content
