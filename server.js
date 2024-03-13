@@ -29,6 +29,11 @@ app.get('/', (req, res) => {
     res.render('index', { title: 'Página de Bienvenida' });
 }); 
 
+//Ruta para el inicio de sesión 
+app.get('/', (req, res) => {
+    res.render('iniciar-sesion', { title: 'Inicio de sesión' });
+});
+
 // Ruta para el catálogo de productos
 app.get('/catalogo', (req, res) => {
     const productos = productosController.getProductos();
