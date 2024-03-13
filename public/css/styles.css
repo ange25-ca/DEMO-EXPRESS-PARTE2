@@ -18,7 +18,7 @@ nav ul {
 }
 nav ul li {
   display: inline-block;
-  margin-right: 30px;
+  margin-right: 20px;
   position: relative;
 }
 nav ul li a {
@@ -33,7 +33,7 @@ nav ul li a {
 nav ul li a:after{
   content: "";
   width: 0;
-  height: 1px;
+  height: 1.5px;
   background-color: rgb(79, 6, 79);
   position: absolute;
   bottom: 0;
@@ -48,7 +48,7 @@ nav ul li a:hover:after {
 }
 
 #icon1 {
-  width: 305x; /* Ajusta el tamaño de la imagen según sea necesario */
+  width: 40x; /* Ajusta el tamaño de la imagen según sea necesario */
   height: 35px;
 }
 
