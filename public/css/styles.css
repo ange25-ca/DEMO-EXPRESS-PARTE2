@@ -93,12 +93,14 @@ table tr:hover {
 }
 .action-buttons button {
   padding: 5px 10px;
+  margin-top: 95px;
   margin-right: 5px;
   background-color: #333;
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  align-items: center;
 }
 .action-buttons button:hover {
   background-color: #555;
@@ -168,7 +170,7 @@ p.empty-cart {
 .producto {
   border: 1px solid #ccc;
   border-radius: 5px;
-  padding: 20px;
+  padding: 25px;
 }
 .producto img {
   max-width: 100%;
@@ -179,10 +181,10 @@ p.empty-cart {
 .producto h2 {
   font-size: 1.5rem;
   font-family:  Poiret One, sans-serif;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 .producto p {
-  margin-bottom: 10px;
+  margin-bottom: 60px;
 }
 .producto button {
   padding: 8px 15px;
@@ -209,7 +211,8 @@ p.empty-cart {
 .button-cancel,
 .button-return {
   padding: 10px 20px;
-  margin: 10px;
+  margin-top: 100px;
+  margin-right: 20px;
   font-size: 16px;
   border: none;
   cursor: pointer;
@@ -217,8 +220,8 @@ p.empty-cart {
 }
 
 .button-confirm {
-  background-color: #8bdf8b;
-  color: rgb(14, 14, 14);
+  background-color: #4CAF50;
+  color: white;
 }
 
 .button-cancel {
@@ -241,7 +244,7 @@ p.empty-cart {
   font-size: 2rem;
   color: #333;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 70px;
 }
 
 .confirmation-message {
@@ -268,9 +271,9 @@ input[type="email"],
 input[type="tel"],
 input[type="submit"] {
   width: 100%; 
-  padding: 1px; 
-  margin-top: 1px;
-  margin-bottom: 1px; 
+  padding: 10px; 
+  margin-top: 10px;
+  margin-bottom: 10px; 
   border: 1px solid #979797; 
   border-radius: 4px; 
   box-sizing: border-box; 
