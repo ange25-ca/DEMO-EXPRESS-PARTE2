@@ -2,5 +2,15 @@ extends layout
 
 block content
   h1 #{title}
-  p Bienvenido a nuestra página de ventas ecommerce.
+  p Ingresa los campos corespondientes.
+  form(action="/submit", method="POST")
+      label(for="nombre") Nombre:
+      input(type="nombre", id="nombre", name="nombre")
 
+      label(for="email") Email:
+      input(type="email", id="email", name="email")
+
+      label(for="telefono") Telefono:
+      input(text="telefono", id="telefono", name="telefono")
+
+      input(type="submit", value="Enviar")
