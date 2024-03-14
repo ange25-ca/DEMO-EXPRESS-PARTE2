@@ -1,9 +1,16 @@
 extends layout
 
 block content
+  style.
+    body {
+        background-image: url('../images/fondo-inicio.jpg');
+        background-repeat: no-repeat;
+        background-size: cover; 
+    }
   h1 #{title}
-  p Ingresa los campos corespondientes para un exitoso inicio de sesion.
   form(action="/submit", method="POST")
+      p Ingresa los campos corespondientes para un exitoso inicio de sesion.
+
       label(for="nombre") Nombre:
       input(type="nombre", id="nombre", name="nombre")
 
@@ -14,3 +21,4 @@ block content
       input(text="telefono", id="telefono", name="telefono")
 
       input(type="submit", value="Enviar")
+  
