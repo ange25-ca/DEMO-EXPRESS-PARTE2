@@ -1,7 +1,8 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: Poiret One, sans-serif;
   margin: 0;
   padding: 0;
+
 }
 
 nav {
@@ -48,7 +49,7 @@ nav ul li a:hover:after {
 }
 
 #icon1 {
-  width: 40x; /* Ajusta el tamaño de la imagen según sea necesario */
+  width: 40x; 
   height: 35px;
 }
 
@@ -59,10 +60,12 @@ nav ul li a:hover:after {
 }
 
 h1 {
-  text-align: center;
+  text-align: left;
   font-family: Sacramento;
   font-size: 100px;
+  text-shadow: 1px 1px 10px rgb(255, 255, 255, 1);
 }
+
 
 table {
   width: 100%;
@@ -157,6 +160,7 @@ p.empty-cart {
 
 .producto-container {
   display: grid;
+  text-align: center;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 20px;
 }
@@ -182,14 +186,17 @@ p.empty-cart {
 }
 .producto button {
   padding: 8px 15px;
-  background-color: #333;
-  color: white;
-  border: none;
+  color: rgb(49, 32, 2);
+  border: 1px solid;
   border-radius: 5px;
   cursor: pointer;
+  text-align: center;
+  align-items: center;
+  font-family: Poiret One, sans-serif;
+  font-weight: bold;
 }
 .producto button:hover {
-  background-color: #555;
+  background-color: #ffffff;
 }
 
 .button-container {
@@ -210,8 +217,8 @@ p.empty-cart {
 }
 
 .button-confirm {
-  background-color: #4CAF50;
-  color: white;
+  background-color: #ffffff;
+  color: rgb(14, 14, 14);
 }
 
 .button-cancel {
@@ -243,5 +250,42 @@ p.empty-cart {
   text-align: center;
   margin-top: 20px;
 }
+
+form {
+  margin: 20px auto;
+  max-width: 400px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+} 
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="submit"] {
+  width: 100%; 
+  padding: 10px; 
+  margin-top: 10px;
+  margin-bottom: 10px; 
+  border: 1px solid #979797; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+}
+
+input[type="submit"] {
+  background-color: #3b0a47; 
+  color: white; 
+  border: none; 
+  font-family: Poiret One, sans-serif;
+  font-weight: bold;
+}
+
+input[type="submit"]:hover {
+  background-color: #8fd69b; 
+  color: black;
+}
+
 
 /*# sourceMappingURL=styles.css.map */

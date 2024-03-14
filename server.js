@@ -8,7 +8,7 @@ const productosController = require('./controllers/productos');
 app.use(session({
   secret: 'secreto', // Clave secreta para firmar la cookie de sesión
   resave: false,
-  saveUninitialized: true
+  saveUninitialized: false
 }));
 
 app.use((req, res, next) => {
@@ -33,6 +33,22 @@ app.get('/', (req, res) => {
 app.get('/iniciar-sesion', (req, res) => {
     res.render('iniciar-sesion', { title: 'Inicio de sesión' });
 });
+
+//app.get('/comprobacion-sesion', (req, res) => {
+    //res.render('comprobacion-sesion', { title: 'Sesión aprobada' });
+//}); 
+
+app.post('/submit', (req, res) => {
+    const nombre = req.body.nombre;
+    const email = req.body.email;
+    const telefono = req.body.telefono;
+
+    if (!nombre || !email || !telefono) { //Condición para que se llene los campos
+        return res.status(400).send('Por favor, rellena todos los campos del formulario.');
+    }
+    //Si se rellenaron completos
+    res.send('¡Formulario enviado correctamente!');
+  });
 
 // Ruta para el catálogo de productos
 app.get('/catalogo', (req, res) => {
